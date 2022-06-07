@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   callAPI() {
-    fetch("SERVER_URL")
+    fetch(SERVER_URL)
       .then((res) => res.text())
       .then((res) => this.setState({ apiResponse: res }))
       .catch((err) => err);
